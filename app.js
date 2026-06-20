@@ -1,3 +1,7 @@
+require("./xyz");           //importing module xyz.js in app.js module
+const obj = require("./sum");      //importing module sum.js in app.js module so to access their functions and variables
+
+
 var name = "Hello Node.js";
 
 var a= 10;
@@ -10,4 +14,8 @@ var b = 20;
 
 //console.log(this); // this returns empty object
 
-console.log(globalThis);        // globalThis is same as global. it is used a standard way to access global object
+//console.log(globalThis);        // globalThis is same as global. it is used a standard way to access global object
+
+obj.calculateSum(a,b);          //calling calculateSum function is not possible because by default Modules protects their variables and functions from leaking . so the console.log is printed but sum function is not called
+
+console.log(obj.x);
