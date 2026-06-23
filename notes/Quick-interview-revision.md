@@ -57,3 +57,71 @@ fs.readFileSync()
 ```js
 fs.readFile()
 ```
+
+
+
+### What is Tokenization?
+
+* Converting source code into tokens.
+
+### What is AST?
+
+* Tree representation of JavaScript code.
+
+### Why do Syntax Errors occur?
+
+* Invalid syntax prevents AST creation.
+
+### What is Ignition?
+
+* V8's interpreter.
+* Converts AST → Bytecode.
+
+### What is Bytecode?
+
+* Intermediate code executed by V8.
+
+### What is TurboFan?
+
+* V8's optimizing compiler.
+* Converts Bytecode → Optimized Machine Code.
+
+### What is JIT Compilation?
+
+* Runtime compilation of code into machine code.
+
+### What is Hot Code?
+
+* Frequently executed code paths.
+
+### What is Deoptimization?
+
+* Happens when optimization assumptions fail.
+
+### Performance Tip
+
+```text
+Consistent Data Types = Better V8 Optimizations
+```
+
+### Complete V8 Flow
+
+```text
+JavaScript Code
+      ↓
+Lexical Analysis
+      ↓
+Tokenization
+      ↓
+Syntax Analysis
+      ↓
+AST
+      ↓
+Ignition
+      ↓
+Bytecode
+      ↓
+TurboFan
+      ↓
+Optimized Machine Code
+```
