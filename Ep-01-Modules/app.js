@@ -4,6 +4,7 @@ require("./xyz");           //importing module xyz.js in app.js module
 // const { x, calculateSum } = require("./calculate/sum");      //destructuring commonjs module on the fly
 // const { calculateMultiply } = require("./calculate/multiply");      
 
+const util = require("node:util");
 const {calculateMultiply, calculateSum} = require("./calculate");  // importing multiple modules together
 
 const data = require("./data.json");
